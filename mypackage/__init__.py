@@ -3,7 +3,7 @@ import boto3
 
 def foo():
     bar(boto3.resource('dynamodb', region_name='us-east-2'))
-    sys.exit(0)
+    sys.exit(0)  # Unable to reproduce without this line
 
 
 # Unable to reproduce if merge this function with foo()
